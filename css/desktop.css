@@ -1,0 +1,27 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  /* ----TEAM---- */
+  .team-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  /* ----CUSTOMERS---- */
+  .container > .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .list-customers {
+    column-gap: 24px;
+  }
+
+  .item-customers {
+    width: 168px;
+    height: 88px;
+    flex-basis: calc((100% - 120px) / 6);
+  }
+}

@@ -46,10 +46,25 @@ img {
 }
 
 .container {
-  width: 1158px;
-  margin: 0 auto;
-  padding-right: 15px;
+  /* width: 1158px; */
+  /* max-width: 428px; */
   padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .header {
@@ -370,19 +385,6 @@ header > .container {
   color: var(--color-slate);
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 .list-work {
   line-height: calc(24 / 16);
   color: var(--general-font);
@@ -430,16 +432,12 @@ header > .container {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
-.team-list {
-  display: flex;
-  gap: 24px;
-}
-
 .team-item {
   background-color: var(--color-white);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  margin-bottom: 72px;
 }
 
 .title-team {
@@ -502,11 +500,6 @@ header > .container {
   padding: 32px 16px;
 }
 
-.customers {
-  padding-top: 130px;
-  padding-bottom: 120px;
-}
-
 .title-customers {
   font-weight: 700;
   font-size: 36px;
@@ -517,7 +510,30 @@ header > .container {
   margin-bottom: 72px;
 }
 
+.customers {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
 .list-customers {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 16px;
+}
+
+.item-customers {
+  width: 100%;
+  height: 88px;
+  flex-basis: calc((100% - 16px) / 2);
+}
+
+/* .customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+} */
+
+/* .list-customers {
   display: flex;
   gap: 24px;
 }
@@ -525,7 +541,7 @@ header > .container {
 .item-customers {
   width: calc((100% - 168px) / 5);
   height: 88px;
-}
+} */
 
 .icon-link {
   width: 100%;
@@ -638,7 +654,7 @@ header > .container {
 /* Footer window email */
 
 .footer-window-email {
-  displapy: block;
+  display: block;
 }
 
 .footer-input-btn {
