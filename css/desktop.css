@@ -3,10 +3,90 @@
     max-width: 1158px;
   }
 
+  /* -----ABOUT-WORK----- */
+  .about-work {
+    padding-top: 120px;
+    padding-bottom: 0;
+  }
+
+  .list-work {
+    display: flex;
+    gap: 24px;
+  }
+
+  .work-list-element {
+    width: 264px;
+  }
+
+  .list-icon {
+    display: block;
+    background-color: var(--color-creamy);
+    padding: 24px 100px;
+    border-radius: 4px;
+  }
+
+  .work-icon {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .list-work {
+    line-height: calc(24 / 16);
+    color: var(--general-font);
+  }
+
+  .title-work {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    color: var(--general-font);
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
+  .title-description {
+    font-style: 500;
+    font-size: 16px;
+    line-height: calc(24 / 20);
+    color: var(--color-slate);
+    margin-bottom: 0;
+  }
+
+  /* -----SCREEN-SECTION----- */
+
+  .screen-section {
+    display: block;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .screen {
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: calc(40 / 36);
+    color: var(--general-font);
+    margin-bottom: 72px;
+  }
+
+  .list-screen {
+    display: flex;
+    gap: 24px;
+  }
+
   /* ----TEAM---- */
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   .team-list {
     display: flex;
     gap: 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 72px) / 4);
   }
 
   /* ----CUSTOMERS---- */

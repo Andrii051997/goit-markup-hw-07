@@ -42,12 +42,13 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 .container {
   /* width: 1158px; */
-  /* max-width: 428px; */
+  /* width: 428px; */
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -344,46 +345,43 @@ header > .container {
   list-style: none;
 }
 
+/* -----ABOUT-WORK----- */
+
 .about-work {
-  padding-top: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .list-work {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .work-list-element {
-  width: 264px;
+  width: 100%;
 }
 
 .list-icon {
-  background-color: var(--color-creamy);
-  padding: 24px 100px;
-  border-radius: 4px;
+  display: none;
 }
 
-.work-icon {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.title-element {
+/* .title-element {
   font-weight: 500;
   font-size: 20px;
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
   color: var(--general-font);
   margin-bottom: 8px;
-}
+} */
 
-.function {
+/* .function {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--color-slate);
-}
+} */
 
 .list-work {
   line-height: calc(24 / 16);
@@ -391,12 +389,12 @@ header > .container {
 }
 
 .title-work {
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 36px;
   line-height: calc(24 / 20);
   color: var(--general-font);
   margin-bottom: 8px;
-  margin-top: 8px;
+  text-align: center;
 }
 
 .title-description {
@@ -404,26 +402,16 @@ header > .container {
   font-size: 16px;
   line-height: calc(24 / 20);
   color: var(--color-slate);
+  letter-spacing: 0.02em;
 }
+
+/* SCREEN-SECTION */
 
 .screen-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  display: none;
 }
 
-.screen {
-  text-align: center;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: calc(40 / 36);
-  color: var(--general-font);
-  margin-bottom: 72px;
-}
-
-.list-screen {
-  display: flex;
-  gap: 24px;
-}
+/* -----TEAM----- */
 
 .team {
   background-color: var(--color-creamy);
@@ -437,15 +425,21 @@ header > .container {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 72px;
+  width: 100%;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 72px;
 }
 
 .title-team {
+  margin-bottom: 72px;
   font-weight: 500;
   font-size: 36px;
   line-height: calc(40 / 36);
   text-align: center;
-  margin-bottom: 72px;
 }
 
 .title-name {
@@ -499,6 +493,8 @@ header > .container {
 .about-function {
   padding: 32px 16px;
 }
+
+/* -----CUSTOMERS----- */
 
 .title-customers {
   font-weight: 700;

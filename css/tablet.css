@@ -3,10 +3,36 @@
     max-width: 768px;
   }
 
-  /* ----TEAM---- */
-  .team-item {
-    margin-bottom: 72px;
+  /* -----ABOUT-WORK----- */
+
+  .list-work {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
   }
+
+  .work-list-element {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .title-work {
+    text-align: start;
+  }
+
+  /* ----TEAM---- */
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  /* ----CUSTOMERS---- */
 
   .list-customers > .container {
     width: 768px;

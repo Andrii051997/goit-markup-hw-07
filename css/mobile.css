@@ -5,12 +5,16 @@
   }
 
   /* ----TEAM---- */
+  .team {
+    padding-top: 96px;
+    padding-bottom: 128px;
+  }
+
   .team-list {
     width: 100%;
   }
-  .team-item {
-    margin-bottom: 72px;
-  }
+
+  /* ----CUSTOMERS---- */
 
   .customers {
     padding-top: 96px;
