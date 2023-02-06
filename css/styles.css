@@ -284,25 +284,6 @@ header > .container {
   border-top: none;
 }
 
-.hero {
-  background-color: var(--general-font);
-  padding-top: 188px;
-  padding-bottom: 188px;
-  max-height: 600px;
-  max-width: 1440px;
-  margin-right: auto;
-  margin-left: auto;
-  background-image: linear-gradient(
-      to right,
-      var(--color-gradient),
-      var(--color-gradient)
-    ),
-    url(../img/people-office.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .hero-title {
   color: var(--color-white);
   font-weight: 500;
@@ -327,9 +308,9 @@ header > .container {
   height: 56px;
   padding: 16px, 32px, 16px, 32px;
   border-radius: 4px;
-  margin-top: 48px;
-  margin-right: 480px;
-  margin-left: 480px;
+  /* margin-top: 48px; */
+  margin-right: auto;
+  margin-left: auto;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border: none;
   transition: background-color var(--transition), box-shadow var(--transition);
@@ -366,22 +347,22 @@ header > .container {
   display: none;
 }
 
-/* .title-element {
+.title-element {
   font-weight: 500;
   font-size: 20px;
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
   color: var(--general-font);
   margin-bottom: 8px;
-} */
+}
 
-/* .function {
+.function {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--color-slate);
-} */
+}
 
 .list-work {
   line-height: calc(24 / 16);
