@@ -1,11 +1,15 @@
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 428px;
+    width: 428px;
     overflow: auto;
   }
 
   /* .header {
     width: 100%;
+  } */
+
+  /* .hero-title {
+    font-size: 36px;
   } */
 
   /* ----TEAM---- */
