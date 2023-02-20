@@ -3,47 +3,140 @@
     max-width: 1158px;
   }
 
-  /* HERO */
+  /* HEADER-NAV */
 
-  /* .hero {
-    background-color: var(--general-font);
-    padding-top: 188px;
-    padding-bottom: 188px;
-    max-height: 600px;
-    max-width: 1440px;
-    margin-right: auto;
-    margin-left: auto;
-    background-image: linear-gradient(
-        to right,
-        var(--color-gradient),
-        var(--color-gradient)
-      ),
-      url(../img/people-office.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  .header {
+    display: flex;
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
+    border-bottom: 1px solid var(--color-header);
+  }
+
+  .header > .container {
+    display: flex;
+    padding: 0 15px;
+    overflow: hidden;
+  }
+
+  .header-nav {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--general-font);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex: wrap;
+    margin-right: 332px;
+  }
+
+  .header-logo {
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--dark-blue);
+    text-decoration: none;
+    letter-spacing: 0.03em;
+  }
+
+  .header-logo-studio {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    color: var(--general-font);
+    margin-right: 76px;
+  }
+
+  .header-nav-list {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--general-font);
+    letter-spacing: 0.02em;
+  }
+
+  .header-nav-item {
+    display: flex;
+    flex: wrap;
+    gap: 40px;
+  }
+
+  .header-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    color: var(--general-font);
+    text-decoration: none;
+    transition: color var(--transition);
+    position: relative;
+  }
+
+  .studio,
+  .portfolio {
+    color: var(--color-ocean);
+  }
+
+  .header-link.current::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--color-ocean);
+    left: 0;
+    bottom: -29px;
+  }
+
+  .header-link:focus,
+  .header-link:hover {
+    color: var(--color-ocean);
+  }
+
+  .btn-menu-open {
+    display: none;
+  }
+
+  .mob-menu {
+    display: none;
+  }
+
+  /* HEADER-CONTACTS */
+
+  /* .header-contacts {
+    display: flex;
   } */
 
-  .hero-btn {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    align-items: center;
-    letter-spacing: 0.04em;
-    color: var(--color-white);
-    background-color: var(--dark-blue);
-    cursor: pointer;
-    display: inline-block;
-    width: 169px;
-    height: 56px;
-    padding: 16px, 32px, 16px, 32px;
-    border-radius: 4px;
-    margin-top: 48px;
-    margin-right: 480px;
-    margin-left: 480px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    border: none;
-    transition: background-color var(--transition), box-shadow var(--transition);
+  .header-contacts {
+    justify-content: center;
+    line-height: calc(24 / 16);
+    text-decoration: none;
+    color: var(--color-slate);
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-contacts-email {
+    line-height: calc(24 / 16);
+    color: var(--color-slate);
+    text-decoration: none;
+    display: flex;
+    transition: color var(--transition);
+  }
+
+  .header-contacts-tel {
+    color: var(--color-slate);
+    text-decoration: none;
+    line-height: calc(24 / 16);
+    transition: color var(--transition);
+  }
+
+  .header-contacts-tel:hover,
+  .header-contacts-email:hover,
+  .header-contacts-tel:focus,
+  .header-contacts-email:focus {
+    color: var(--color-ocean);
   }
 
   /* -----ABOUT-WORK----- */
@@ -149,7 +242,11 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
+  .section {
+    text-align: center;
+  }
+
   .hero {
     background-color: var(--general-font);
     padding-top: 188px;
@@ -167,6 +264,19 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          var(--color-gradient),
+          var(--color-gradient)
+        ),
+        url(../img/hero-bg-tablet-2x.jpg);
+    }
   }
 
   .hero-title {

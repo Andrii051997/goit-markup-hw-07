@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="header-nav">
           <a href="./index.html" class="header-logo"
@@ -57,8 +57,109 @@
             >
           </li>
         </ul>
+        <button type="button" class="btn-menu-open" data-menu-open>
+          <svg class="btn-menu-icons" width="32px" height="32px">
+            <use href="./img/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+
+        <!-- MOB-MENU -->
+        <div class="mob-menu" data-menu>
+          <div class="mob-container">
+            <button type="button" class="btn-menu-close" data-menu-close>
+              <svg width="8px" height="8px">
+                <use
+                  href="./img/icons.svg#icon-close"
+                  class="btn-close-menu"
+                ></use>
+              </svg>
+            </button>
+            <div class="mob-top">
+              <nav>
+                <ul class="mob-menu-nav-item list">
+                  <li class="mob-menu-nav-list">
+                    <a class="mob-menu-link studio current" href="./index.html"
+                      >Studio</a
+                    >
+                  </li>
+                  <li class="mob-menu-nav-list">
+                    <a class="mob-menu-link" href="./portfolio.html"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li class="mob-menu-nav-list current-second">
+                    <a class="mob-menu-link" href="">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="mob-bottom">
+              <ul class="mob-menu-contacts list">
+                <li>
+                  <a class="mob-menu-contacts-tel" href="tel:+11(000)1111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mob-menu-contacts-email"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mob-social-networks-list">
+                <li class="mob-social-networks-item">
+                  <a href="" class="mob-social-networks-link">
+                    <svg
+                      class="mob-social-networks-icon"
+                      width="24px"
+                      height="24px"
+                    >
+                      <use href="./img/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-social-networks-item">
+                  <a href="" class="mob-social-networks-link">
+                    <svg
+                      class="mob-social-networks-icon"
+                      width="24px"
+                      height="24px"
+                    >
+                      <use href="./img/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-social-networks-item">
+                  <a href="" class="mob-social-networks-link">
+                    <svg
+                      class="mob-social-networks-icon"
+                      width="24px"
+                      height="19px"
+                    >
+                      <use href="./img/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mob-social-networks-item">
+                  <a href="" class="mob-social-networks-link"
+                    ><svg
+                      class="mob-social-networks-icon"
+                      width="15px"
+                      height="16px"
+                    >
+                      <use href="./img/icons.svg#icon-linkedin2"></use></svg
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </header> -->
+    </header>
+
+    <!-- MAIN -->
     <main>
       <section class="hero section">
         <div class="container">
@@ -134,6 +235,7 @@
               <img
                 src="./img/phone-img-1.jpg"
                 alt="laptop screen"
+                srcset="./img/phone-img-1.jpg 1x, ./img/phone-img-1-2x.jpg 2x"
                 width="360"
                 height="300"
               />
@@ -142,6 +244,7 @@
               <img
                 src="./img/phone-img-2.jpg"
                 alt="smartphone screen"
+                srcset="./img/phone-img-2.jpg 1x, ./img/phone-img-2-2x.jpg 2x"
                 width="360"
                 height="300"
               />
@@ -150,6 +253,7 @@
               <img
                 src="./img/phone-img-3.jpg"
                 alt="laptop and smartphone screens"
+                srcset="./img/phone-img-3.jpg 1x, ./img/phone-img-3-2x.jpg 2x"
                 width="360"
                 height="300"
               />
@@ -166,6 +270,10 @@
                 class="team-list"
                 src="./img/team-partner-1.jpg"
                 alt="Product Designer"
+                srcset="
+                  ./img/team-partner-1.jpg    1x,
+                  ./img/team-partner-1-2x.jpg 2x
+                "
                 width="264"
                 height="260"
               />
@@ -225,6 +333,10 @@
                 class="team-list"
                 src="./img/team-partner-2.jpg"
                 alt="Frontend Developer"
+                srcset="
+                  ./img/team-partner-2.jpg    1x,
+                  ./img/team-partner-2-2x.jpg 2x
+                "
                 width="264"
                 height="260"
               />
@@ -280,6 +392,10 @@
               <img
                 src="./img/team-partner-3.jpg"
                 alt="Marketing"
+                srcset="
+                  ./img/team-partner-3.jpg    1x,
+                  ./img/team-partner-3-2x.jpg 2x
+                "
                 width="264"
                 height="260"
               />
@@ -334,6 +450,10 @@
               <img
                 src="./img/team-partner-4.jpg"
                 alt="UI Designer"
+                srcset="
+                  ./img/team-partner-4.jpg    1x,
+                  ./img/team-partner-4-2x.jpg 2x
+                "
                 width="264"
                 height="260"
               />
@@ -593,5 +713,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
