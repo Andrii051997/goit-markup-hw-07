@@ -277,4 +277,14 @@
     border: none;
     transition: background-color var(--transition), box-shadow var(--transition);
   }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
+
+  /* .modal-btn {
+    margin-right: 119px;
+    margin-left: 120px;
+  } */
 }

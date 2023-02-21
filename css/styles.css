@@ -157,7 +157,7 @@ img {
 }
 
 .mob-menu > .container {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -224,10 +224,8 @@ img {
   height: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--color-header);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-left: auto;
+  margin-bottom: 32px;
 }
 
 .btn-close-menu:active {
@@ -237,19 +235,23 @@ img {
 .mob-menu-nav-item {
   display: flex;
   flex-direction: column;
-  column-gap: 40px;
+  /* column-gap: 40px; */
 }
 
 .mob-menu-nav-list {
-  text-decoration: none;
+  margin-bottom: 40px;
 }
 
 .list {
   text-decoration: none;
 }
 
-.mob-bottom {
+/* .mob-bottom {
   margin-top: 50px;
+} */
+
+.mob-top {
+  margin-bottom: 50px;
 }
 
 .mob-menu-link {
@@ -259,8 +261,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--general-font);
   text-decoration: none;
-  display: flex;
-  gap-row: 40px;
 }
 
 .mob-menu-link:focus,
@@ -290,7 +290,7 @@ img {
 .mob-menu-contacts-tel {
   /* width: 353px; */
   font-weight: 600;
-  font-size: 11vw;
+  font-size: 24px;
   line-height: 1.1em;
   letter-spacing: 0.02em;
   color: var(--dark-blue);
@@ -307,6 +307,7 @@ img {
 }
 
 .mob-social-networks-item {
+  margin-bottom: 70px;
 }
 
 .mob-social-networks-link {
@@ -859,7 +860,9 @@ img {
   fill: var(--color-white);
 }
 
-/* Modal window */
+/* ============
+MODAL WINDOW
+============ */
 
 .backdrop {
   position: fixed;
@@ -871,17 +874,23 @@ img {
 }
 
 .modal {
+  overflow: auto;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 408px;
-  min-height: 584px;
+  max-width: 392px;
+  width: 95%;
+  /* width: 91vw; */
+  /* min-height: 584px; */
+  /* height: -140vw; */
+  height: auto;
   background-color: rgba(252, 252, 252, 1);
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   transform: translate(-50%, -50%) scale(1);
   transition: var(--transition);
   padding: 24px;
   background-color: var(--color-background-modal);
+  border-radius: 4px;
 }
 
 .backdrop.is-hidden .modal {
@@ -962,7 +971,7 @@ img {
 }
 
 .textarea {
-  width: 360px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1001,6 +1010,12 @@ img {
 }
 
 .modal-btn {
+  display: block;
+  width: 169px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
   padding: 16px 32px 16px 32px;
   border-radius: 4px;
   color: var(--color-white);
@@ -1008,8 +1023,6 @@ img {
   border: none;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  margin-left: 119px;
-  margin-right: 120px;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -1036,6 +1049,7 @@ img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .checkbox-link {
@@ -1044,6 +1058,7 @@ img {
   line-height: 1.33px;
   letter-spacing: 0.04em;
   color: var(--dark-blue);
+  display: flex;
 }
 
 .check-text span {
@@ -1124,6 +1139,13 @@ img {
   text-align: center;
   margin-bottom: 72px;
   /* letter-spacing: 0.02em; */
+}
+
+@media screen and (max-height: 620px) {
+  .modal {
+    height: 96%;
+    overflow: auto;
+  }
 }
 
 /* ========
