@@ -51,13 +51,10 @@ img {
 }
 
 .container {
-  /* width: 1158px; */
-  /* max-width: 428px; */
   padding-left: 15px;
   padding-right: 15px;
   margin-left: 0 auto;
   margin-right: 0 auto;
-  outline: 1px solid red;
 }
 
 .visually-hidden {
@@ -693,16 +690,34 @@ img {
   fill: var(--color-ocean);
 }
 
+/* ============
+FOOTER
+============ */
+
 .footer {
   background-color: var(--general-font);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   display: flex;
 }
 
+.footer .container > {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 72px;
+}
+
+/* .footer-cont {
+  display: flex;
+  justify-content: center;
+} */
+
 .footer-logo {
+  text-align: center;
   display: block;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -726,21 +741,28 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(24 / 16);
-  display: inline-block;
-  width: 264px;
+  display: block;
+  max-width: 268px;
+  /* margin-right: 80px;
+  margin-left: 80px; */
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
 .footer-cont {
-  display: flex;
+  /* display: flex; */
 }
 
-.footer-logo-container {
+/* .footer-logo-container {
   width: 264px;
   margin-right: 120px;
-}
+} */
 
 .footer-link-container {
   margin-right: auto;
+  margin-left: auto;
 }
 
 .footer-title-soc-media {
@@ -750,6 +772,8 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-white);
   margin-bottom: 16px;
+  text-align: center;
+  margin-top: 72px;
 }
 
 .footer-list-soc-media {
@@ -790,7 +814,7 @@ img {
 }
 
 .footer-input-btn {
-  display: flex;
+  /* display: flex; */
 }
 
 .footer-email {
@@ -800,18 +824,21 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-white);
   margin-bottom: 16px;
+  margin-top: 72px;
+  text-align: center;
 }
 
 .input-footer {
-  width: 264px;
+  width: 100%;
   height: 40px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding-left: 16px;
   caret-color: var(--color-white);
-  margin-right: 24px;
+  /* margin-right: 24px; */
   transition: border-color var(--transition);
+  margin-bottom: 16px;
 }
 
 .input-footer:hover,
@@ -844,6 +871,10 @@ img {
   color: var(--color-white);
   cursor: pointer;
   transition: background-color var(--transition), box-shadow var(--transition);
+}
+
+.footer-input-btn {
+  text-align: center;
 }
 
 .footer-btn:hover,
@@ -1059,6 +1090,7 @@ MODAL WINDOW
   letter-spacing: 0.04em;
   color: var(--dark-blue);
   display: flex;
+  text-decoration: none;
 }
 
 .check-text span {

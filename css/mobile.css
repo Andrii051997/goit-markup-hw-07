@@ -44,4 +44,21 @@
     height: 88px;
     flex-basis: calc((100% - 16px) / 2);
   }
+
+  .footer > .container > {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 72px;
+  }
+
+  /* .footer-title-soc-media {
+    text-align: center;
+    margin-top: 72px;
+  } */
+
+  /* .footer-input-btn {
+    text-align: center;
+  } */
 }
